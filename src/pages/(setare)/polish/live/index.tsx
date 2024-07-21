@@ -1,0 +1,146 @@
+import React from 'react'
+import polishImg from '@/images/icons/polish.webp'
+import motorImg from '@/images/icons/motor.webp'
+import offImg from '@/images/icons/switch-off.webp'
+import onImg from '@/images/icons/switch-on.webp'
+
+const onePolishData = [
+  {
+    label: 'موتور 1',
+    status: 'on',
+    currentConsumption: '121 A',
+    temperature: '50 ℃',
+  },
+  {
+    label: 'موتور 2',
+    status: 'on',
+    currentConsumption: '133 A',
+    temperature: '56 ℃',
+  },
+  {
+    label: 'موتور 3',
+    status: 'off',
+    currentConsumption: '0 A',
+    temperature: '70 ℃',
+  },
+  {
+    label: 'موتور 4',
+    status: 'on',
+    currentConsumption: '186 A',
+    temperature: '60 ℃',
+  },
+  {
+    label: 'موتور 5',
+    status: 'on',
+    currentConsumption: '111 A',
+    temperature: '52 ℃',
+  },
+  {
+    label: 'موتور 6',
+    status: 'off',
+    currentConsumption: '0 A',
+    temperature: '68 ℃',
+  },
+  {
+    label: 'موتور 7',
+    status: 'on',
+    currentConsumption: '82 A',
+    temperature: '66 ℃',
+  },
+  {
+    label: 'موتور 8',
+    status: 'on',
+    currentConsumption: '144 A',
+    temperature: '64 ℃',
+  },
+  {
+    label: 'موتور 9',
+    status: 'off',
+    currentConsumption: '0 A',
+    temperature: '54 ℃',
+  },
+  {
+    label: 'موتور 10',
+    status: 'on',
+    currentConsumption: '123 A',
+    temperature: '62 ℃',
+  },
+]
+
+const polishList = [
+  {
+    label: 'دستگاه 1',
+    data: onePolishData,
+  },
+]
+
+export default function Live() {
+  return (
+    <div // polish live root
+    >
+      <header // polish main header
+        className='flex flex-wrap items-center justify-center gap-4 p-4 sm:justify-normal'
+      >
+        <img // polish image
+          src={polishImg}
+          alt='پولیش'
+          className='h-20 w-auto object-contain'
+        />
+        <h1 className='text-2xl font-bold'>پولیش</h1>
+      </header>
+      <section className='flex flex-col gap-8 rounded-lg bg-slate-100/50 p-3 shadow-lg'>
+        {polishList.map(polish => (
+          <article key={polish.label} className='flex flex-col gap-2'>
+            <h2 className='px-3 text-xl font-bold'>{polish.label}</h2>
+            <div // all cards container
+              className='flex flex-wrap items-center justify-center'
+            >
+              {polish.data.map(data => (
+                <dl // card container
+                  key={data.label}
+                  className='flex-[0_0_100%] p-2 md:flex-[0_0_50%] xl:flex-[0_0_25%] 2xl:flex-[0_0_20%]'
+                >
+                  <div className='flex flex-col gap-4 rounded-lg bg-slate-100/50 p-3 shadow-lg'>
+                    <div // card title
+                      className='flex items-center gap-2 border-b border-slate-300 pb-3'
+                    >
+                      <img
+                        src={motorImg}
+                        alt='موتور'
+                        className='h-12 w-12 object-contain filter'
+                      />
+                      <p className='text-lg font-bold'>{data.label}</p>
+                      <div className='flex flex-grow items-center justify-end'>
+                        <img
+                          src={data.status === 'on' ? onImg : offImg}
+                          alt={data.status === 'on' ? 'روشن' : 'خاموش'}
+                          className='h-12 w-12'
+                        />
+                      </div>
+                    </div>
+                    <div className='flex items-center justify-between gap-2 border-b border-slate-300 pb-3'>
+                      <dt className='text-sm text-slate-500 after:content-[":"]'>
+                        جریان
+                      </dt>
+                      <dd className='font-bold text-slate-600' dir='ltr'>
+                        {data.currentConsumption}
+                      </dd>
+                    </div>
+                    <div className='flex items-center justify-between gap-2'>
+                      <dt className='text-sm text-slate-500 after:content-[":"]'>
+                        دما
+                      </dt>
+                      <dd className='font-bold text-slate-600' dir='ltr'>
+                        {data.temperature}
+                      </dd>
+                    </div>
+                  </div>
+                </dl>
+              ))}
+            </div>
+          </article>
+        ))}
+      </section>
+    </div>
+  )
+}

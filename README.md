@@ -1,1 +1,3 @@
-# Rasam_UX_Design
+# Rasamiot Ceramic Factory prototype
+
+This repository is the source code of a prototype for an admin dashboard tailored for ceramic factories which represents an innovative step towards streamlining operations, enhancing efficiency, and fostering data-driven decisions in the ceramic industry. These prototypes are designed to offer a centralized interface where factory administrator can seamlessly monitor production metrics, track inventory, manage orders, and ensure quality control. By integrating a web app technological features with the unique demands of ceramic manufacturing, these dashboards aim to revolutionize the way ceramic factories operate and adapt in an ever-evolving market landscape.
