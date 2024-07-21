@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="assets/logo.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="a proto type of Rasamiot centralized dashboard for managing ceramic factories."
+    />
+    <title>Rasamiot Ceramic Prototype</title>
+    <script type="module" crossorigin src="./assets/index-30107361.js"></script>
+    <link rel="stylesheet" href="./assets/index-17a466b1.css">
+  </head>
+  <body>
+    <div id="rasamiot"></div>
+    
+  </body>
+</html>
+
+<!-- 
+,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,;,;,;,;,;,;,;,;,;,–,:,!,!,;,;,;,–,!,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,;,.,.,.,.,.,.,–,:,M,M,M,!,.,.,.,.,.,;,:,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,;,.,.,.,.,;,–,M,M,M,M,M,!,.,.,.,.,.,.,.,–,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,;,.,.,.,;,>,M,M,M,–,–,;,;,.,.,.,.,.,.,.,.,;,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,;,.,.,;,:,M,M,–,;,.,.,;,;,.,.,.,.,.,.,.,.,.,;,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,;,.,;,:,M,M,;,.,.,;,–,7,!,.,.,.,.,.,.,.,.,.,.,;,M,M,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,;,.,–,M,M,;,.,.,;,M,M,M,!,.,.,.,.,.,.,.,.,.,.,;,!,M,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,;,;,M,M,:,.,.,;,M,M,M,?,!,.,.,.,.,.,.,.,.,.,.,.,;,M,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,;,–,M,M,;,.,;,M,M,>,–,;,.,.,.,.,.,.,.,.,.,.,.,.,;,M,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,;,?,M,>,;,;,!,M,?,;,.,;,;,–,;,.,.,.,.,.,.,.,.,.,.,!,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,:,M,M,–,.,;,M,M,–,.,;,–,M,M,–,;,.,.,.,.,.,.,.,.,.,;,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,>,M,M,;,.,;,M,M,;,.,:,M,M,M,M,–,.,.,.,.,.,.,.,.,.,;,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,?,;,;,;,.,;,;,;,;,;,M,M,M,M,M,?,;,.,.,.,.,.,.,.,.,;,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,;,.,.,.,.,.,.,.,.,.,!,M,M,M,M,!,.,.,.,.,.,.,.,.,.,;,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,;,.,.,.,.,.,.,.,.,.,;,M,M,M,:,;,.,.,.,.,.,.,.,.,.,;,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,;,.,.,.,.,.,.,.,.,.,.,;,–,–,;,.,.,.,.,.,.,.,.,.,.,–,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,!,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,;,7,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,M,;,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,;,M,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,M,–,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,–,M,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,M,M,;,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,;,M,M,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,M,M,:,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,;,:,M,M,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,–,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,;,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,M,M,1,1,–,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,;,M,M,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,M,1,1,1,1,;,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,;,M,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,1,1,1,1,1,1,–,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,;,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,1,1,1,1,1,1,1,1,;,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,;,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,1,1,1,1,1,1,1,1,1,1,–,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,;,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,1,1,1,1,1,1,1,1,1,1,1,1,;,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,;,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,1,1,1,1,1,1,1,1,1,1,1,1,1,1,–,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,;,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,;,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,;,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,–,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,;,M,M,M,M,M,M,
+,M,M,M,M,M,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,M,;,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,;,M,M,M,M,M,
+,M,M,M,M,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,M,M,;,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,;,M,M,M,M,
+,M,M,M,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,M,M,M,M,;,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,;,M,M,M,
+,M,M,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,M,M,M,M,M,M,;,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,;,M,M,
+,M,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,M,M,M,M,M,M,M,M,;,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,;,M,
+,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,M,M,M,M,M,M,M,M,M,M,;,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,–,
+,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,M,M,M,M,M,M,M,M,M,M,M,M,–,;,.,.,.,.,.,.,.,.,.,.,.,.,.,;,;,–,!,
+,M,M,M,1,1,1,1,1,1,1,1,1,1,1,1,1,1,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,>,–,;,;,.,.,.,.,.,;,;,;,–,:,?,M,M,M,
+,M,M,M,M,M,M,M,M,>,1,1,1,1,1,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,?,>,:,–,:,>,?,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,
+,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,
+-->
