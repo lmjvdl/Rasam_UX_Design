@@ -2,6 +2,7 @@
   "name": "product-ux",
   "private": true,
   "version": "1.0.0",
+  "homepage": "https://lmjvdl.github.io/Rasam_UX_Design",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -48,10 +49,9 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "eslint-plugin-tailwindcss": "^3.13.0",
-    "gh-pages": "^6.1.1",
+    "gh-pages": "^6.2.0",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.3",
     "vite": "^4.4.5"
-  },
-  "homepage": "https://lmjvdl.github.io/Rasam_UX_Design"
+  }
 }
